@@ -86,7 +86,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 height: 10,
               ),
               Text(
-                "Create a new account",
+                "Create a new BreezeTalk account",
                 style: TextStyle(
                     fontWeight: FontWeight.bold, color: Colors.black),
               ),
