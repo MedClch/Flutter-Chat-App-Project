@@ -132,6 +132,9 @@ class _ProfilePageState extends State<ProfilePage> {
   Future<void> updatePassword(String newPassword) async {
     if(confirmPasswordTextController1.text.trim()!=confirmPasswordTextController.text.trim()){
       showMessage("Passwords don't match ! Please try again");
+      passwordTextController.clear();
+      confirmPasswordTextController.clear();
+      confirmPasswordTextController1.clear();
     }
     else if(passwordTextController.text.trim().isEmpty||confirmPasswordTextController.text.trim().isEmpty){
       Navigator.pop(context);
